@@ -34,11 +34,42 @@
 #Ejercicio 8
 
 #Ejercicio 9
-#invertir=float(input( 'Cual es la cantitad a invertir? '))
 #interesanual=float(input('Cual es tu interes anual? '))
 #años=float(input('Un numero de años para su ganancia '))
-#print('Se mostrara tu capital obtenido a futuro con la formula C(i/(100+1)**años, donde C es la cantidad que vas a invertir, i tu interes anual y los años para que termine tu ganancia ')
 #capital=str((invertir)*(interesanual/((100+1)**años)))
 #print('Tu capital obtenido es: ', capital )
 
 #Ejercicio 10
+
+#print('Introduzca un numero entero positivo ')
+#enteropositivo=int(input())
+#suma=((enteropositivo*(enteropositivo+1))/2)
+#print("Se sumara desde 1 hasta el numero que seleccionaste")
+#if suma > 20  : print(" es un gran numero! " , suma)
+#print ("El resultado es " , suma)
+
+#print('Hola, que cantidad deseas invertir? ')
+#inversion=int(input())
+#print('En cuantos años? ')
+#años=int(input())
+#print('Interes anual? ')
+#interes=int(input())
+#capital=(inversion*((interes/100)+ 1 )**años)
+#if capital < 100000 : print("Baja Inversion " + str(capital))
+#if capital > 1000000 : print("Es una buena inversion " + str(capital))
+#if 100000 < capital > 1000000 : print("Rentabilidad Moderada " + str(capital))
+
+payasos= 112
+muñecas= 75
+print('Cuantos payasos se vendieron? ')
+paven=int(input())
+print('Cuantas muñecas se vendieron? ')
+muñven=int(input())
+pesodelpaquete=((payasos*paven)+(muñecas*muñven))
+print("El peso del contenedor es ", pesodelpaquete )
+if pesodelpaquete > 3000 : print('Desea enviar el contenedor? ')
+respuesta=input()
+si=input()
+no=input()
+if respuesta == si : print("Contenedor enviado ")
+if respuesta == no : print("Contenedor NO enviado ")
