@@ -59,17 +59,37 @@
 #if capital > 1000000 : print("Es una buena inversion " + str(capital))
 #if 100000 < capital > 1000000 : print("Rentabilidad Moderada " + str(capital))
 
-payasos= 112
-muñecas= 75
-print('Cuantos payasos se vendieron? ')
-paven=int(input())
-print('Cuantas muñecas se vendieron? ')
-muñven=int(input())
-pesodelpaquete=((payasos*paven)+(muñecas*muñven))
-print("El peso del contenedor es ", pesodelpaquete )
-if pesodelpaquete > 3000 : print('Desea enviar el contenedor? ')
-respuesta=input()
-si=input()
-no=input()
-if respuesta == si : print("Contenedor enviado ")
-if respuesta == no : print("Contenedor NO enviado ")
+#payasos= 112
+#muñecas= 75
+#print('Cuantos payasos se vendieron? ')
+#paven=int(input())
+#print('Cuantas muñecas se vendieron? ')
+#muñven=int(input())
+#pesodelpaquete=((payasos*paven)+(muñecas*muñven))
+#print("El peso del contenedor es ", pesodelpaquete )
+#if pesodelpaquete > 3000 : print('Desea enviar el contenedor? ')
+#respuesta=input()
+#si=input()
+#no=input()
+#if respuesta == si : print("Contenedor enviado ")
+#if respuesta == no : print("Contenedor NO enviado ")
+
+#ejercicio 1.1
+#print("Ingrese un primer numero ")
+#numuno=int(input())
+#print("Ingrese un segundo numero ")
+#numdos=int(input())
+#def suma ( numuno,numdos ):
+# return  numuno+numdos
+#misuma= suma (numuno,numdos)
+#print("El resultado de la suma es ", misuma)
+
+#ejercicio 1.2
+#print("Ingrese un primer numero ")
+#numuno=int(input())
+#print("Ingrese un segundo numero ")
+#numdos=int(input())
+#def suma ( numuno,numdos ):
+# return  numuno-numdos
+#misuma= suma (numuno,numdos)
+#print("El resultado de la suma es ", misuma)
