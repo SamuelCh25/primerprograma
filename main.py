@@ -31,8 +31,6 @@
 #masacorporal=round(float(peso)/float(estatura)**2,2)
 #print('tu masa corporal es ', masacorporal)
 
-#Ejercicio 8
-
 #Ejercicio 9
 #interesanual=float(input('Cual es tu interes anual? '))
 #años=float(input('Un numero de años para su ganancia '))
@@ -40,7 +38,6 @@
 #print('Tu capital obtenido es: ', capital )
 
 #Ejercicio 10
-
 #print('Introduzca un numero entero positivo ')
 #enteropositivo=int(input())
 #suma=((enteropositivo*(enteropositivo+1))/2)
@@ -93,3 +90,29 @@
 # return  numuno-numdos
 #misuma= suma (numuno,numdos)
 #print("El resultado de la suma es ", misuma)
+
+#Ejercicio 66
+def intereses(inv): 
+  d= inv
+if (d>0 and d<1000000) :
+  return 2
+elif(d>1000000 and d < 2000000) :
+  return 5
+ else :
+   return 7
+
+def calBalance(imt, inv):
+  n=int
+  d=inv
+  return round((d*(1+(n/100))),2)
+  
+def calAhorro():
+  #inversion,intereses,b1,b2,b3 = 0.0
+  inversion = float(input('Ingrese valor de la inversion: '))
+  intereses = intereses(inversion)
+  b1 =calBalance(interes,inversion)
+  b2 =calBalance(interes,b1)
+  b3 =calBalance(interes,b2)
+  print('Balance año 1: ' + str(b1) + 'Balance año 2: ' + str(b2) + 'Balance año 3: ' + str(b3))
+
+catAhorro()
