@@ -92,27 +92,61 @@
 #print("El resultado de la suma es ", misuma)
 
 #Ejercicio 66
-def intereses(inv): 
-  d= inv
-if (d>0 and d<1000000) :
-  return 2
-elif(d>1000000 and d < 2000000) :
-  return 5
- else :
-   return 7
+##d= inv
+#if (d>0 and d<1000000) :
+ # return 2
+#elif(d>1000000 and d < 2000000) :
+#  return 5
+# else :
+#   return 7
 
-def calBalance(imt, inv):
-  n=int
-  d=inv
-  return round((d*(1+(n/100))),2)
+#def calBalance(imt, inv):
+ # n=int
+ # d=inv
+#  return round((d*(1+(n/100))),2)
   
-def calAhorro():
-  #inversion,intereses,b1,b2,b3 = 0.0
-  inversion = float(input('Ingrese valor de la inversion: '))
-  intereses = intereses(inversion)
-  b1 =calBalance(interes,inversion)
-  b2 =calBalance(interes,b1)
-  b3 =calBalance(interes,b2)
-  print('Balance año 1: ' + str(b1) + 'Balance año 2: ' + str(b2) + 'Balance año 3: ' + str(b3))
+#def calAhorro():
+ # #inversion,intereses,b1,b2,b3 = 0.0
+#  inversion = float(input('Ingrese valor de la inversion: '))
+#  intereses = intereses(inversion)
+ # b1 =calBalance(interes,inversion)
+ # b2 =calBalance(interes,b1)
+ # b3 =calBalance(interes,b2)
+ # print('Balance año 1: ' + str(b1) + 'Balance año 2: ' + str(b2) + 'Balance año 3: ' + str(b3))
 
-catAhorro()
+#catAhorro()
+
+
+#def maximo(a,b):
+ # if a>b:
+ #  return a
+ # else:
+ #   return b
+
+#def minimo(a,b):
+ # if a<b: 
+   # return a
+#  else:
+  #  return b
+
+#programa principal
+#x=int(input("Un numero "))
+#y=int(input("Otro numero "))
+#print(maximo(x-3,minimo(x+2, y-5)))
+
+
+preciosiniva=(int(input("Ingrese el costo del estereo sin el IVA ")))
+descuento1 = (preciosiniva/0.10)
+marquita=int(input("Ingrese que marca tiene "))
+
+def descuento(presiosiniva):
+  if preciosiniva>=2000000:
+   return descuento1
+  else:
+   return preciosiniva
+
+def segundodescuento(marquita)
+  if marquita == 'NOSY'
+  return 
+
+
