@@ -118,16 +118,16 @@
 
 
 #def maximo(a,b):
- # if a>b:
- #  return a
- # else:
- #   return b
+  #if a>b:
+  # return a
+  #else:
+ #  return b
 
 #def minimo(a,b):
  # if a<b: 
-   # return a
-#  else:
-  #  return b
+ #   return a
+ # else:
+ #   return b
 
 #programa principal
 #x=int(input("Un numero "))
@@ -135,18 +135,161 @@
 #print(maximo(x-3,minimo(x+2, y-5)))
 
 
-preciosiniva=(int(input("Ingrese el costo del estereo sin el IVA ")))
-descuento1 = (preciosiniva/0.10)
-marquita=int(input("Ingrese que marca tiene "))
+#preciosiniva=(int(input("Ingrese el costo del estereo sin el IVA ")))
+#descuento1 = (preciosiniva/0.10)
+#marquita=int(input("Ingrese que marca tiene "))
 
-def descuento(presiosiniva):
-  if preciosiniva>=2000000:
-   return descuento1
-  else:
-   return preciosiniva
+#def descuento(presiosiniva):
+#  if preciosiniva>=2000000:
+#   return descuento1
+#  else:
+ #  return preciosiniva
 
-def segundodescuento(marquita)
-  if marquita == 'NOSY'
-  return 
+#def segundodescuento(marquita)
+#  if marquita == 'NOSY'
+ # return 
 
 
+
+
+
+#TALLER 1 
+#1. 
+#año = int(input("Ingrese un año para saber si es biciesto o no: "))
+#if (año % 4 == 0 and año % 100 != 0) or (año % 400 == 0):
+#    print(año, "es bisiesto")
+#else:
+#    print(año, "no es bisiesto")
+
+
+#2. 
+#altura = float(input("Ingrese la altura del perro en centímetros: "))
+#peso = float(input("Ingrese el peso del perro en kilogramos: "))
+
+#if altura <= 30 and peso <= 15:
+ #   tamaño = "Pequeño"
+  
+#elif 30 < altura <= 40 and 15 < peso <= 25:
+ #   tamaño = "Mediano"
+  
+#elif 40 < altura <= 60 and 25 < peso <= 45:
+#    tamaño = "Grande"
+  
+#else:
+#    tamaño = "Nosesabe"
+
+#if tamaño != "Nosesabe":
+   # print("El perro es " ,(tamaño))
+#else:
+   # print("No se puede saber su tamaño. ")
+
+
+#3. 
+#temperaturainicial = float(input("Ingrese la temperatura: "))
+#escalainicial = input("Ingrese la escala de temperatura actual (Celsius, Fahrenheit, o Kelvin): ").capitalize()
+#escalaaconvertir = input("Ingrese la escala a la que desea convertir (Celsius, Fahrenheit, o Kelvin): ").capitalize()
+
+#if escalainicial == "Celsius" and escalaaconvertir == "Fahrenheit":
+    #temperaturaconvertida = temperaturainicial * 9/5 + 32
+    #unidad_destino = "Fahrenheit"
+#elif escalainicial == "Celsius" and escalaaconvertir == "Kelvin":
+  #  temperaturaconvertida = temperaturainicial + 273.15
+   # unidad_destino = "Kelvin"
+#elif escalainicial == "Fahrenheit" and escalaaconvertir == "Celsius":
+ #   temperaturaconvertida = (temperaturainicial - 32) * 5/9
+  #  unidad_destino = "Celsius"
+#elif escalainicial == "Fahrenheit" and escalaaconvertir == "Kelvin":
+ #   temperaturaconvertida = (temperaturainicial - 32) * 5/9 + 273.15
+  #  unidad_destino = "Kelvin"
+#elif escalainicial == "Kelvin" and escalaaconvertir == "Celsius":
+ #   temperaturaconvertida = temperaturainicial - 273.15
+  #  unidad_destino = "Celsius"
+#elif escalainicial == "Kelvin" and escalaaconvertir == "Fahrenheit":
+ #   temperaturaconvertida = (temperaturainicial - 273.15) * 9/5 + 32
+  #  unidad_destino = "Fahrenheit"
+#else:
+ #   print("Las escalas ingresadas no son válidas.")
+  #  temperaturaconvertida = None
+   # unidad_destino = ""
+
+#if temperaturaconvertida is not None:
+ #   print(f"La temperatura convertida es {temperaturaconvertida} {unidad_destino}.")
+
+
+#4.
+
+#nombre = input("Ingrese el nombre del participante: ")
+#edad = int(input("Ingrese la edad del participante: "))
+#grupo = ""
+#costo = 0
+
+#if edad >= 10 and edad <= 17:
+ #   grupo = "Niños"
+  #  costo = 25000
+#    if edad >= 10 and edad <= 13:
+ #       costo *= 0.85  
+  #  elif edad > 17:
+   #     costo *= 0.92  
+#elif edad >= 18 and edad <= 50:
+ #   grupo = "Adultos"
+  #  costo = 35000
+   # if edad >= 18 and edad <= 30:
+    #    costo *= 0.89  
+    #elif edad > 30:
+     #   costo *= 0.91  
+#elif edad > 50:
+ #   grupo = "Adulto Mayor"
+  #  costo = 50000
+   # if edad > 65:
+    #    costo *= 0.6  
+
+#print(f"Nombre del participante: {nombre}")
+#print(f"Grupo: {grupo}")
+#print(f"Costo original: ${costo:,.0f}")
+#print(f"Valor a pagar con descuento: ${costo:,.0f}")
+
+#5.
+#import math
+#tipo_recipiente = input("Seleccione el tipo de recipiente (Cubo, Cilindro o Esfera): ").capitalize()
+#volumen = 0.0
+
+#if tipo_recipiente == "Cubo":
+  #  lado = float(input("Ingrese el lado del cubo: "))
+   # volumen = lado ** 3
+#elif tipo_recipiente == "Cilindro":
+#    radio = float(input("Ingrese el radio de la base del cilindro: "))
+#    altura = float(input("Ingrese la altura del cilindro: "))
+ #   volumen = math.pi * radio**2 * altura
+#elif tipo_recipiente == "Esfera":
+ #   radio = float(input("Ingrese el radio de la esfera: "))
+  #  volumen = (4/3) * math.pi * radio**3
+#else:
+ #   print("Tipo de recipiente no válido.")
+
+#if volumen > 0:
+ #   print(f"El volumen del {tipo_recipiente} es {volumen:.2f} unidades cúbicas.")
+
+#6.
+#cantidad_cubos = int(input("Ingrese la cantidad de cubos Rubik a enviar: "))
+#tipo_caja = input("Ingrese el tipo de caja (Pequeña, Mediana, Grande o Extragrande): ").lower()
+#volumen_total = cantidad_cubos * 167
+#tamaño_caja_litros = 0
+
+#if tipo_caja == "pequeña":
+#    tamaño_caja_litros = 5
+#elif tipo_caja == "mediana":
+#    tamaño_caja_litros = 7
+#elif tipo_caja == "grande":
+#    tamaño_caja_litros = 10
+#elif tipo_caja == "extragrande":
+#    tamaño_caja_litros = 15
+#else:
+#    print("Tipo de caja no válido.")
+#    exit()
+
+#cantidad_cajas = volumen_total / (tamaño_caja_litros * 1000) 
+
+#if cantidad_cajas.is_integer():
+#    print(f"Se necesitan {int(cantidad_cajas)} cajas de tipo {tipo_caja.capitalize()} para el envío.")
+#else:
+#    print(f"Se necesitan {int(cantidad_cajas) + 1} cajas de tipo {tipo_caja.capitalize()} para el envío.")
