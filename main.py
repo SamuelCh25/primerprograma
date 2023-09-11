@@ -188,32 +188,31 @@
 #temperaturainicial = float(input("Ingrese la temperatura: "))
 #escalainicial = input("Ingrese la escala de temperatura actual (Celsius, Fahrenheit, o Kelvin): ").capitalize()
 #escalaaconvertir = input("Ingrese la escala a la que desea convertir (Celsius, Fahrenheit, o Kelvin): ").capitalize()
-
 #if escalainicial == "Celsius" and escalaaconvertir == "Fahrenheit":
-    #temperaturaconvertida = temperaturainicial * 9/5 + 32
-    #unidad_destino = "Fahrenheit"
+#    temperaturaconvertida = temperaturainicial * 9/5 + 32
+#    unidad_destino = "Fahrenheit"
 #elif escalainicial == "Celsius" and escalaaconvertir == "Kelvin":
-  #  temperaturaconvertida = temperaturainicial + 273.15
-   # unidad_destino = "Kelvin"
+#    temperaturaconvertida = temperaturainicial + 273.15
+#    unidad_destino = "Kelvin"
 #elif escalainicial == "Fahrenheit" and escalaaconvertir == "Celsius":
- #   temperaturaconvertida = (temperaturainicial - 32) * 5/9
-  #  unidad_destino = "Celsius"
+#    temperaturaconvertida = (temperaturainicial - 32) * 5/9
+#    unidad_destino = "Celsius"
 #elif escalainicial == "Fahrenheit" and escalaaconvertir == "Kelvin":
- #   temperaturaconvertida = (temperaturainicial - 32) * 5/9 + 273.15
-  #  unidad_destino = "Kelvin"
+#    temperaturaconvertida = (temperaturainicial - 32) * 5/9 + 273.15
+#    unidad_destino = "Kelvin"
 #elif escalainicial == "Kelvin" and escalaaconvertir == "Celsius":
- #   temperaturaconvertida = temperaturainicial - 273.15
-  #  unidad_destino = "Celsius"
+#    temperaturaconvertida = temperaturainicial - 273.15
+#    unidad_destino = "Celsius"
 #elif escalainicial == "Kelvin" and escalaaconvertir == "Fahrenheit":
- #   temperaturaconvertida = (temperaturainicial - 273.15) * 9/5 + 32
-  #  unidad_destino = "Fahrenheit"
+#    temperaturaconvertida = (temperaturainicial - 273.15) * 9/5 + 32
+#    unidad_destino = "Fahrenheit"
 #else:
- #   print("Las escalas ingresadas no son válidas.")
-  #  temperaturaconvertida = None
-   # unidad_destino = ""
+#    print("Las escalas ingresadas no son válidas.")
+#    temperaturaconvertida = None
+#    unidad_destino = ""
 
 #if temperaturaconvertida is not None:
- #   print(f"La temperatura convertida es {temperaturaconvertida} {unidad_destino}.")
+#    print(f"La temperatura convertida es {temperaturaconvertida} {unidad_destino}.")
 
 
 #4.
@@ -293,3 +292,86 @@
 #    print(f"Se necesitan {int(cantidad_cajas)} cajas de tipo {tipo_caja.capitalize()} para el envío.")
 #else:
 #    print(f"Se necesitan {int(cantidad_cajas) + 1} cajas de tipo {tipo_caja.capitalize()} para el envío.")
+
+
+#Valorjamón= 7000
+#ValorArepas= 6000
+#Valorpantajado= 6500
+
+#jamon=input('Cantidad a comprar jamon ')
+#arepas=input('Cantidad a comprar arepas ')
+#pantajado=input('Cantidad a comprar pan tajado ')
+
+#def Totaljamon():
+ #if jamon == 2:
+  # print("Descuento es" , (Valorjamón*2))
+# elif jamon > 2 and jamon < 5:
+ # print("Descuento es " , ((Valorjamón*jamon) *0.5))
+ #elif jamon >= 5:
+  #print("Descuento es " , (Valorjamón*jamon)-Valorjamón)
+  #return print("El costo es " , Valorjamón)
+
+#Totalarepas=(ValorArepas*arepas)
+#print("El costo total de las arepas es de " , Totalarepas)
+
+    
+
+
+
+
+
+
+'''#CORTE 2
+
+A=0
+while A<10:
+  print(A)
+  A=A+1
+'''
+def Menu()
+ 
+def suma():
+  a=float(input("Ingrese el PRIMER numero para sumar "))
+  b=float(input("Ingrese el SEGUNDO numero para sumar "))
+  return a+b
+
+def resta():
+  c=float(input("Ingrese el PRIMER numero a restar "))
+  d=float(input("Ingrese el SEGUNDO numero a restar "))
+  return c-d
+
+def multiplicacion():
+  e=float(input("Ingrese el PRIMER numero a multiplicar "))
+  f=float(input("Ingresar el SEGUNDO numero a restar "))
+  return e*f
+
+def division():
+  g=float(input("Ingrese el PRIMER numero a dividir (numerador) "))
+  h=float(input("Ingrese el SEGUNDO numero a dividir (denominador) "))
+  if h==0:
+     print("Error en la division ")
+  else:
+    return g/h
+
+def Calculadora():
+   Menu()
+   opcion=0
+
+  while opcion != 5:
+
+   opcion = int(input('Selecciona una opcion '))
+  
+   if (opcion==1):
+      print ("La suma es: ", suma())
+   elif (opcion==2):
+      print("La resta es: ", resta())
+   elif (opcion==3):
+      print("La multiplicacion es: ", multiplicacion())
+   elif (opcion==4):
+      print("La division es: ", division())
+   elif(opcion==5):
+      print("Se agotaron las opciones, adios")
+   else:
+     print("La opcion es invalida ")
+  
+Calculadora()
