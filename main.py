@@ -328,7 +328,8 @@ while A<10:
   print(A)
   A=A+1
 '''
-def Menu()
+'''
+def Menu():
  
 def suma():
   a=float(input("Ingrese el PRIMER numero para sumar "))
@@ -374,4 +375,47 @@ def Calculadora():
    else:
      print("La opcion es invalida ")
   
-Calculadora()
+Calculadora() 
+'''
+'''
+for c in range(1,5,1):
+   print(c)
+'''
+'''
+print ("Hola, adivina un numero aleatorio de 1 a 100")
+
+import random
+def adivina():
+  numerorandom = random.randint(1,100)
+  adivinado = False 
+  
+  while not adivinado:    
+    intento = int(input("Que numero crees que es? "))
+    if intento == numerorandom:
+     print("Felicidades! Acabas de acertarlo ")
+     adivinado = True
+    elif intento < numerorandom:
+      print("El numero es mayor ")
+    else: 
+       print("El numero es menor ")
+
+adivina()
+'''
+'''
+numerousuario = int(input("Ingrese un numero "))
+
+for tabla in range (1,11,1):
+  print(numerousuario*tabla)      
+'''
+
+
+def factorial():
+  numero = int(input("Ingrese un numero para calcular su factorial "))
+  factorial=1
+
+  for i in range (1, numero + 1):
+    factorial*= i
+
+  print ("El factorial de tu numero es", factorial)
+
+factorial()
