@@ -408,7 +408,7 @@ for tabla in range (1,11,1):
   print(numerousuario*tabla)      
 '''
 
-
+'''
 def factorial():
   numero = int(input("Ingrese un numero para calcular su factorial "))
   factorial=1
@@ -419,3 +419,18 @@ def factorial():
   print ("El factorial de tu numero es", factorial)
 
 factorial()
+'''
+'''
+lista=["gato","perro"] + ["caballo","serpiente"]
+lista.append("gallina")
+print(lista)
+'''
+
+uno=input('A continuacion coloque 5 caracteres para enlistarlos ')
+dos=input('Segundo caracter ')
+tres=input('Tercer caracter ')
+cuatro=input('Cuarto caracter ')
+cinco=input('Quinto caracter ')
+
+lista=[uno , dos , tres , cuatro , cinco]
+print(lista)
