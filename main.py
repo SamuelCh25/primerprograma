@@ -425,7 +425,7 @@ lista=["gato","perro"] + ["caballo","serpiente"]
 lista.append("gallina")
 print(lista)
 '''
-
+'''
 uno=input('A continuacion coloque 5 caracteres para enlistarlos ')
 dos=input('Segundo caracter ')
 tres=input('Tercer caracter ')
@@ -434,3 +434,51 @@ cinco=input('Quinto caracter ')
 
 lista=[uno , dos , tres , cuatro , cinco]
 print(lista)
+'''
+'''
+def notasLista():
+  notas = []
+  for indice in range(1,6):
+    while True:
+      nota = int(input("Introduce la nota "))
+      if nota>=0 and nota<=10: break
+    notas.append(nota)
+
+  print("Notas: ")
+  for nota in notas:
+    print(nota)
+
+  print()
+  print("Nota media: " ,sum(notas)/len(notas))
+  print("Nota Max: ",max(notas))
+  print("Nota Min: ",min(notas))
+
+notasLista()
+'''
+'''
+def listanumeros():
+  numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  for list in range(1, 11):
+    print(numeros[-list], end=", ")
+listanumeros()
+'''
+'''
+def listanumeros():
+  numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  numeros.reverse()
+  
+  for lista in numeros:
+    print(lista, end=", ")
+listanumeros()
+'''
+
+def listaAsignaturas():
+  materias = ["Matematicas", "Fisica", "Quimica", "Historia", "Lengua"]
+  for Materia in range(len(materias)-1, -1, -1):
+    Notas= float(input("Cual es su nota final de la asignatura "+ materias[Materia] + "?"))
+    if Notas >= 3:
+        materias.pop(Materia)
+  print("Tienes que repetir " + str(materias))
+
+listaAsignaturas()
+ 
