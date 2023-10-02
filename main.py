@@ -471,7 +471,7 @@ def listanumeros():
     print(lista, end=", ")
 listanumeros()
 '''
-
+'''
 def listaAsignaturas():
   materias = ["Matematicas", "Fisica", "Quimica", "Historia", "Lengua"]
   for Materia in range(len(materias)-1, -1, -1):
@@ -481,4 +481,55 @@ def listaAsignaturas():
   print("Tienes que repetir " + str(materias))
 
 listaAsignaturas()
- 
+'''
+
+
+#LISTA DE LISTAS
+'''
+personaje= ["shiva",43,30,["imagenPath","soundPath"]]
+print(personaje)
+M= [[1,0,0],[0,1,0],[0,0,1]]
+print(M)
+'''
+'''
+print('Hola, vas a crear tu lista de contactos')
+contactos= [[],[],[],[]]
+'''
+'''
+print("BIENVENIDO A TU LISTADO DE CONTACTOS ")
+print(" ")
+print(" ")
+print("Introduce la: ")
+primercontacto= input("Informacion de tu primer contacto, nombre, numero y correo electronico ")
+segundocontacto= input("Informacion de tu segundo contacto, nombre, numero y correo electronico ")
+tercercontacto= input("Informacion de tu tercer contacto, nombre, numero y correo electronico ")
+
+listacontactos= [[primercontacto],[segundocontacto],[tercercontacto]]
+print(listacontactos)
+print(" ")
+
+eliminar= int(input("Para eliminar contacto introduzca el 1, para finalizar 0 y para agregar un nuevo contacto 2 "))
+print(" ")
+
+def opciones():
+  if (eliminar == 1):
+     uno= print("Que contacto desea eliminar? En que posicion esta? ")
+     listacontactos.remove(listacontactos[uno])
+     print(listacontactos)
+  elif (eliminar == 2):
+     agregar= input("Ingrese la informacion solicitada anteriormente para agregar nuevo contacto ")
+     listacontactos.append(agregar)
+     print(listacontactos)
+  elif (eliminar == 0):
+     print("Ha terminado con exito ")
+  else:
+    print("Opcion no valida ") 
+
+opciones()
+'''
+
+listapica= [["A Pica"],["1 Pica"],["2 Pica"],["3 Pica"],["4 Pica"],["5 Pica"],["6 Pica"],["7 Pica"],["8 Pica"],["9 Pica"],["10 Pica"],["J Pica"],["Q Pica"],["KPica"]]
+listacorazon= [["A"],[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],["J"],["Q"],["K"]]
+listadiamante= [["A"],[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],["J"],["Q"],["K"]]
+listatrebol= [["A"],[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],["J"],["Q"],["K"]]
+  
