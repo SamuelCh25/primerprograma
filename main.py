@@ -528,8 +528,32 @@ def opciones():
 opciones()
 '''
 
-listapica= [["A Pica"],["1 Pica"],["2 Pica"],["3 Pica"],["4 Pica"],["5 Pica"],["6 Pica"],["7 Pica"],["8 Pica"],["9 Pica"],["10 Pica"],["J Pica"],["Q Pica"],["KPica"]]
-listacorazon= [["A"],[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],["J"],["Q"],["K"]]
-listadiamante= [["A"],[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],["J"],["Q"],["K"]]
-listatrebol= [["A"],[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],["J"],["Q"],["K"]]
-  
+
+ventasdia = []
+
+def calcularventas(ventasdeldia):
+  total = 0
+  for venta in ventasdeldia:
+      total += venta[1] * venta[2]
+  return total
+
+  while True:
+    
+    producto = input("Ingrese el nombre del producto y si quiere salir escribalo ")
+    
+    if(producto == "salir"):
+      break
+      
+  cantidad = int(input("Ingrese la cantidad vendida: "))
+  precio = float(input("Ingrese el precio unitario: "))
+  venta = [producto, cantidad, precio]
+  ventasdia.append(venta)
+  totalventas = calcularventas(ventasdia)
+  print("El total de ventas del día fue:", totalventas)
+
+calcularventas(ventasdeldia=)
+
+
+
+
+
